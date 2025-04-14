@@ -261,6 +261,29 @@
         Témoignages d'anciens stagiaires
         <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-orange"></span>
       </h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center mb-8">
+        <div class="lg:col-span-2 order-2 lg:order-1">
+          <div class="relative mx-auto max-w-md" data-aos="fade-right" data-aos-delay="300">
+            <img src="../assets/studying-student.svg" alt="Étudiant concentré" class="w-full studying-student-animated">
+            <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center animate-pulse shadow-lg">
+              <i class="fas fa-lightbulb text-white text-lg"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-3 order-1 lg:order-2" data-aos="fade-left" data-aos-delay="300">
+          <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-secondary-light">
+            <h3 class="text-xl font-bold text-secondary-dark mb-4">Ce que disent nos stagiaires</h3>
+            <p class="text-gray-700 mb-6">
+              Découvrez les témoignages d'anciens stagiaires qui ont bénéficié de notre programme pour développer 
+              leurs compétences et lancer leur carrière dans l'administration publique. Leurs expériences 
+              enrichissantes vous donneront un aperçu de ce qui vous attend au sein du Ministère.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
           <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
@@ -482,20 +505,38 @@
     
     <!-- CTA Section -->
     <section class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-      <div class="bg-gradient-to-r from-primary-dark via-primary to-secondary rounded-lg shadow-xl p-8 text-white text-center transform transition hover:shadow-2xl">
+      <div class="bg-gradient-to-r from-primary-dark via-primary to-secondary rounded-lg shadow-xl p-8 text-white overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full bg-white opacity-5 rounded-lg" style="background-image: url('data:image/svg+xml,%3Csvg width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z%22 fill=%22%23fff%22 fill-opacity=%221%22 fill-rule=%22evenodd%22/%3E%3C/svg%3E')"></div>
-        <div class="relative z-10">
-          <h2 class="text-3xl font-bold mb-4" data-aos="fade-down" data-aos-delay="200">Prêt à lancer votre carrière ?</h2>
-          <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
-            Rejoignez le Ministère de l'Économie et des Finances pour une expérience enrichissante et développez vos compétences professionnelles
-          </p>
-          <div class="flex flex-wrap justify-center gap-6">
-            <router-link to="/application" class="bg-white text-primary hover:bg-gray-100 py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105" data-aos="fade-up" data-aos-delay="600">
-              <i class="fas fa-file-signature mr-2"></i> Postuler maintenant
-            </router-link>
-            <router-link to="/contact" class="border-2 border-white text-white hover:bg-white hover:text-primary py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105" data-aos="fade-up" data-aos-delay="800">
-              <i class="fas fa-envelope mr-2"></i> Nous contacter
-            </router-link>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center relative z-10">
+          <div class="lg:col-span-3 text-center lg:text-left">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-down" data-aos-delay="200">Prêt à lancer votre carrière ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="400">
+              Rejoignez le Ministère de l'Économie et des Finances pour une expérience enrichissante et développez vos compétences professionnelles
+            </p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+              <router-link to="/application" class="relative group bg-white text-primary hover:bg-gray-100 py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                <span class="relative z-10 flex items-center">
+                  <i class="fas fa-file-signature mr-2"></i> Postuler maintenant
+                </span>
+                <span class="absolute inset-0 h-full w-0 bg-gradient-to-r from-accent-yellow to-accent-teal opacity-20 transition-all duration-300 group-hover:w-full"></span>
+                <span class="cta-badge absolute -top-2 -right-2 w-6 h-6 bg-accent-orange rounded-full text-xs flex items-center justify-center text-white">
+                  <i class="fas fa-star"></i>
+                </span>
+              </router-link>
+              <router-link to="/contact" class="border-2 border-white text-white hover:bg-white hover:text-primary py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105" data-aos="fade-up" data-aos-delay="800">
+                <i class="fas fa-envelope mr-2"></i> Nous contacter
+              </router-link>
+            </div>
+          </div>
+          
+          <div class="lg:col-span-2 hidden lg:block" data-aos="fade-left" data-aos-delay="600">
+            <div class="relative">
+              <img src="../assets/student-group.svg" alt="Groupe d'étudiants" class="w-full student-group-animated">
+              <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent-orange rounded-full flex items-center justify-center animate-bounce-slow shadow-lg z-10">
+                <i class="fas fa-graduation-cap text-white text-lg"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
