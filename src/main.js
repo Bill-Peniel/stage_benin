@@ -2,7 +2,17 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-// Tailwind CSS is imported in App.vue
+// Animation libraries
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+// Initialize AOS
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  mirror: false
+})
 
 const app = createApp(App)
 

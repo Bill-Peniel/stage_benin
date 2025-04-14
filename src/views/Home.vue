@@ -1,10 +1,11 @@
 <template>
   <div class="page-container">
     <!-- Hero Section -->
-    <section class="relative bg-gray-50 rounded-xl overflow-hidden mb-12">
+    <section class="relative bg-accent rounded-xl overflow-hidden mb-12">
+      <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-secondary"></div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-6 md:px-12">
-        <div class="flex flex-col justify-center">
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div class="flex flex-col justify-center" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
             Programme de Stages du Ministère de l'Économie et des Finances
           </h1>
           <p class="text-lg text-gray-600 mb-6">
@@ -12,32 +13,32 @@
             et développez vos compétences professionnelles.
           </p>
           <div class="flex flex-wrap gap-4">
-            <router-link to="/application" class="btn-primary text-center">
+            <router-link to="/application" class="btn-primary text-center transform transition hover:scale-105">
               Faire une demande
             </router-link>
-            <a href="#about" class="btn-outline text-center">
+            <a href="#about" class="btn-outline text-center transform transition hover:scale-105">
               En savoir plus
             </a>
           </div>
         </div>
-        <div class="flex justify-center items-center">
-          <div class="relative h-64 w-full md:h-80 overflow-hidden rounded-lg">
-            <div class="absolute inset-0 bg-gradient-to-r from-green-800 to-blue-900 opacity-90"></div>
+        <div class="flex justify-center items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="relative h-64 w-full md:h-80 overflow-hidden rounded-lg shadow-lg transform transition hover:scale-102 hover:shadow-xl">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-dark to-secondary-dark opacity-90"></div>
             <div class="relative z-10 h-full flex flex-col justify-center items-center text-white text-center p-6">
-              <i class="fas fa-graduation-cap text-5xl mb-4"></i>
+              <i class="fas fa-graduation-cap text-5xl mb-4 animate-bounce-slow"></i>
               <h2 class="text-2xl font-bold mb-2">Investissez dans votre avenir</h2>
               <p class="mb-4">Rejoignez une institution gouvernementale de premier plan</p>
               <div class="grid grid-cols-3 gap-4 w-full max-w-xs">
-                <div class="text-center">
-                  <div class="text-xl font-bold">+50</div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+                  <div class="text-xl font-bold text-accent-yellow">+50</div>
                   <div class="text-sm">Stages</div>
                 </div>
-                <div class="text-center">
-                  <div class="text-xl font-bold">8</div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="800">
+                  <div class="text-xl font-bold text-accent-teal">8</div>
                   <div class="text-sm">Départements</div>
                 </div>
-                <div class="text-center">
-                  <div class="text-xl font-bold">+500</div>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="1000">
+                  <div class="text-xl font-bold text-accent-orange">+500</div>
                   <div class="text-sm">Stagiaires</div>
                 </div>
               </div>
