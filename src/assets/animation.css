@@ -197,12 +197,104 @@
   transform: scale(1.02);
 }
 
+/* Animations pour la page Login */
+.login-illustration-animated {
+  position: relative;
+  transform-origin: center;
+  animation: login-illustration-float 6s ease-in-out infinite;
+}
+
+@keyframes login-illustration-float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(8px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Animation pour les éléments d'authentification qui clignotent */
+.login-illustration-animated #secure-elements path {
+  animation: secure-pulse 2s infinite alternate;
+  animation-delay: calc(var(--index) * 0.3s);
+  transform-origin: center;
+}
+
+@keyframes secure-pulse {
+  0% {
+    opacity: 0.7;
+    fill: var(--original-color);
+  }
+  100% {
+    opacity: 1;
+    fill: #4C51BF;
+  }
+}
+
+/* Animations pour la page Register */
+.register-illustration-animated {
+  position: relative;
+  transform-origin: center bottom;
+  animation: register-illustration-sway 8s ease-in-out infinite alternate;
+}
+
+@keyframes register-illustration-sway {
+  0% {
+    transform: rotate(-1deg) translateY(0);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(1deg) translateY(0);
+  }
+}
+
+.register-illustration-animated #form-elements rect,
+.register-illustration-animated #form-elements circle {
+  animation: form-element-pulse 3s infinite alternate;
+  animation-delay: calc(var(--index) * 0.5s);
+}
+
+@keyframes form-element-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
 /* Responsive designs pour les SVGs */
 @media (max-width: 768px) {
   .student-group-animated,
   .ministry-building-animated,
-  .studying-student-animated {
+  .studying-student-animated,
+  .login-illustration-animated,
+  .register-illustration-animated {
     max-width: 90%;
     margin: 0 auto;
+  }
+  
+  /* Animation spéciale pour mobile */
+  .login-illustration-animated,
+  .register-illustration-animated {
+    display: none;
+  }
+  
+  /* Afficher une version mobile simplifiée des illustrations d'authentification */
+  .sm-auth-image {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 2rem;
+    animation: float 3s ease-in-out infinite;
   }
 }
