@@ -131,124 +131,175 @@
     </section>
     
     <!-- Process Section -->
-    <section class="mb-12">
-      <h2 class="section-title">Processus de candidature</h2>
-      <div class="bg-white rounded-lg shadow-md p-6">
+    <section class="mb-12" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="section-title text-primary-dark relative pb-2 mb-6">
+        Processus de candidature
+        <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-teal"></span>
+      </h2>
+      <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div class="bg-gray-50 rounded-md p-4 text-center">
-            <div class="w-12 h-12 bg-green-800 text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-user-edit"></i>
+          <div class="bg-accent rounded-lg p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-right" data-aos-delay="200">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary to-primary-light text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-user-edit text-xl"></i>
             </div>
-            <h3 class="font-semibold mb-2">1. Inscription</h3>
-            <p class="text-sm text-gray-600">
+            <h3 class="font-bold text-lg mb-3 text-primary">1. Inscription</h3>
+            <p class="text-gray-700">
               Créez un compte et remplissez vos informations personnelles
             </p>
           </div>
-          <div class="bg-gray-50 rounded-md p-4 text-center">
-            <div class="w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-file-alt"></i>
+          <div class="bg-accent rounded-lg p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-right" data-aos-delay="400">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary-light to-secondary-light text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-file-alt text-xl"></i>
             </div>
-            <h3 class="font-semibold mb-2">2. Demande</h3>
-            <p class="text-sm text-gray-600">
+            <h3 class="font-bold text-lg mb-3 text-primary-light">2. Demande</h3>
+            <p class="text-gray-700">
               Soumettez votre demande avec tous les documents requis
             </p>
           </div>
-          <div class="bg-gray-50 rounded-md p-4 text-center">
-            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-clipboard-check"></i>
+          <div class="bg-accent rounded-lg p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-right" data-aos-delay="600">
+            <div class="w-16 h-16 bg-gradient-to-r from-secondary-light to-secondary text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-clipboard-check text-xl"></i>
             </div>
-            <h3 class="font-semibold mb-2">3. Examen</h3>
-            <p class="text-sm text-gray-600">
+            <h3 class="font-bold text-lg mb-3 text-secondary-light">3. Examen</h3>
+            <p class="text-gray-700">
               Votre dossier est examiné par les services compétents
             </p>
           </div>
-          <div class="bg-gray-50 rounded-md p-4 text-center">
-            <div class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-envelope-open-text"></i>
+          <div class="bg-accent rounded-lg p-6 text-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-right" data-aos-delay="800">
+            <div class="w-16 h-16 bg-gradient-to-r from-secondary to-secondary-dark text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-envelope-open-text text-xl"></i>
             </div>
-            <h3 class="font-semibold mb-2">4. Réponse</h3>
-            <p class="text-sm text-gray-600">
+            <h3 class="font-bold text-lg mb-3 text-secondary">4. Réponse</h3>
+            <p class="text-gray-700">
               Vous recevez une réponse par email dans les meilleurs délais
             </p>
           </div>
         </div>
-        <div class="mt-8 text-center">
-          <router-link to="/application" class="btn-primary">
-            Commencer ma demande
+        <div class="mt-10 text-center" data-aos="zoom-in" data-aos-delay="1000">
+          <router-link to="/application" class="btn-primary px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform transition hover:scale-105">
+            Commencer ma demande <i class="fas fa-arrow-right ml-2"></i>
           </router-link>
         </div>
       </div>
     </section>
     
     <!-- Testimonials Section -->
-    <section class="mb-12">
-      <h2 class="section-title">Témoignages d'anciens stagiaires</h2>
+    <section class="mb-12" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="section-title text-secondary-dark relative pb-2 mb-6">
+        Témoignages d'anciens stagiaires
+        <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-orange"></span>
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-              <i class="fas fa-user text-green-800"></i>
+        <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+          <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <div class="flex items-center mb-4 pt-2">
+            <div class="w-14 h-14 rounded-full bg-primary bg-opacity-20 flex items-center justify-center shadow">
+              <i class="fas fa-user text-primary text-xl"></i>
             </div>
             <div class="ml-4">
-              <h3 class="font-semibold">Kofi Mensah</h3>
+              <h3 class="font-bold text-primary">Kofi Mensah</h3>
               <p class="text-sm text-gray-600">Stage à la Direction Générale du Budget</p>
             </div>
           </div>
-          <p class="text-gray-600">
-            "Mon stage au sein de la Direction Générale du Budget a été une expérience très enrichissante. 
-            J'ai pu mettre en pratique mes connaissances en finances publiques et comprendre les mécanismes 
-            d'élaboration du budget national."
-          </p>
+          <div class="relative">
+            <i class="fas fa-quote-left absolute -left-2 -top-2 text-primary text-opacity-10 text-4xl"></i>
+            <p class="text-gray-700 italic relative z-10">
+              "Mon stage au sein de la Direction Générale du Budget a été une expérience très enrichissante. 
+              J'ai pu mettre en pratique mes connaissances en finances publiques et comprendre les mécanismes 
+              d'élaboration du budget national."
+            </p>
+          </div>
+          <div class="flex mt-4">
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+          </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-              <i class="fas fa-user text-blue-800"></i>
+        <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-secondary transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+          <div class="absolute -top-3 -left-3 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center shadow-md">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <div class="flex items-center mb-4 pt-2">
+            <div class="w-14 h-14 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center shadow">
+              <i class="fas fa-user text-secondary text-xl"></i>
             </div>
             <div class="ml-4">
-              <h3 class="font-semibold">Aminata Diallo</h3>
+              <h3 class="font-bold text-secondary">Aminata Diallo</h3>
               <p class="text-sm text-gray-600">Stage à la Direction des Systèmes d'Information</p>
             </div>
           </div>
-          <p class="text-gray-600">
-            "J'ai eu l'opportunité de participer à la digitalisation des services du ministère. 
-            Ce stage m'a permis d'acquérir des compétences techniques et de comprendre les enjeux 
-            de la transformation numérique dans l'administration publique."
-          </p>
+          <div class="relative">
+            <i class="fas fa-quote-left absolute -left-2 -top-2 text-secondary text-opacity-10 text-4xl"></i>
+            <p class="text-gray-700 italic relative z-10">
+              "J'ai eu l'opportunité de participer à la digitalisation des services du ministère. 
+              Ce stage m'a permis d'acquérir des compétences techniques et de comprendre les enjeux 
+              de la transformation numérique dans l'administration publique."
+            </p>
+          </div>
+          <div class="flex mt-4">
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star-half-alt text-accent-yellow"></i>
+          </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-              <i class="fas fa-user text-green-800"></i>
+        <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-accent-teal transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="600">
+          <div class="absolute -top-3 -left-3 w-8 h-8 bg-accent-teal text-white rounded-full flex items-center justify-center shadow-md">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <div class="flex items-center mb-4 pt-2">
+            <div class="w-14 h-14 rounded-full bg-accent-teal bg-opacity-20 flex items-center justify-center shadow">
+              <i class="fas fa-user text-accent-teal text-xl"></i>
             </div>
             <div class="ml-4">
-              <h3 class="font-semibold">David Adjovi</h3>
+              <h3 class="font-bold text-accent-teal">David Adjovi</h3>
               <p class="text-sm text-gray-600">Stage à la Direction Générale des Impôts</p>
             </div>
           </div>
-          <p class="text-gray-600">
-            "Ce stage m'a ouvert les portes du monde professionnel. J'ai approfondi mes connaissances 
-            en fiscalité et j'ai pu travailler sur des dossiers concrets. Cette expérience a été 
-            déterminante pour mon orientation professionnelle."
-          </p>
+          <div class="relative">
+            <i class="fas fa-quote-left absolute -left-2 -top-2 text-accent-teal text-opacity-10 text-4xl"></i>
+            <p class="text-gray-700 italic relative z-10">
+              "Ce stage m'a ouvert les portes du monde professionnel. J'ai approfondi mes connaissances 
+              en fiscalité et j'ai pu travailler sur des dossiers concrets. Cette expérience a été 
+              déterminante pour mon orientation professionnelle."
+            </p>
+          </div>
+          <div class="flex mt-4">
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+            <i class="fas fa-star text-accent-yellow"></i>
+          </div>
         </div>
       </div>
     </section>
     
     <!-- FAQ Section -->
-    <section class="mb-12">
-      <h2 class="section-title">Questions fréquentes</h2>
-      <div class="bg-white rounded-lg shadow-md p-6">
+    <section class="mb-12" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="section-title text-primary-dark relative pb-2 mb-6">
+        Questions fréquentes
+        <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-yellow"></span>
+      </h2>
+      <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-accent-yellow">
         <div class="space-y-4">
-          <div class="border-b border-gray-200 pb-4">
+          <div class="border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="100">
             <button 
               @click="toggleFaq(1)" 
-              class="flex justify-between items-center w-full text-left font-semibold"
+              class="flex justify-between items-center w-full text-left font-bold text-primary hover:text-primary-light transition-colors duration-300"
             >
-              <span>Quelles sont les conditions pour postuler à un stage ?</span>
-              <i :class="[openFaq === 1 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas']"></i>
+              <span class="flex items-center">
+                <i class="fas fa-question-circle mr-3 text-accent-yellow text-xl"></i>
+                Quelles sont les conditions pour postuler à un stage ?
+              </span>
+              <i :class="[openFaq === 1 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas transition-transform duration-300']"></i>
             </button>
-            <div v-show="openFaq === 1" class="mt-2 text-gray-600">
+            <div v-show="openFaq === 1" class="mt-3 text-gray-700 pl-8 pr-4 animate-fade-in">
               <p>
                 Pour postuler à un stage au Ministère de l'Économie et des Finances, vous devez :
               </p>
@@ -261,15 +312,18 @@
             </div>
           </div>
           
-          <div class="border-b border-gray-200 pb-4">
+          <div class="border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="200">
             <button 
               @click="toggleFaq(2)" 
-              class="flex justify-between items-center w-full text-left font-semibold"
+              class="flex justify-between items-center w-full text-left font-bold text-primary hover:text-primary-light transition-colors duration-300"
             >
-              <span>Quelle est la durée des stages ?</span>
-              <i :class="[openFaq === 2 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas']"></i>
+              <span class="flex items-center">
+                <i class="fas fa-clock mr-3 text-accent-yellow text-xl"></i>
+                Quelle est la durée des stages ?
+              </span>
+              <i :class="[openFaq === 2 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas transition-transform duration-300']"></i>
             </button>
-            <div v-show="openFaq === 2" class="mt-2 text-gray-600">
+            <div v-show="openFaq === 2" class="mt-3 text-gray-700 pl-8 pr-4 animate-fade-in">
               <p>
                 La durée des stages varie selon le type :
               </p>
@@ -282,15 +336,18 @@
             </div>
           </div>
           
-          <div class="border-b border-gray-200 pb-4">
+          <div class="border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="300">
             <button 
               @click="toggleFaq(3)" 
-              class="flex justify-between items-center w-full text-left font-semibold"
+              class="flex justify-between items-center w-full text-left font-bold text-primary hover:text-primary-light transition-colors duration-300"
             >
-              <span>Les stages sont-ils rémunérés ?</span>
-              <i :class="[openFaq === 3 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas']"></i>
+              <span class="flex items-center">
+                <i class="fas fa-money-bill-wave mr-3 text-accent-yellow text-xl"></i>
+                Les stages sont-ils rémunérés ?
+              </span>
+              <i :class="[openFaq === 3 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas transition-transform duration-300']"></i>
             </button>
-            <div v-show="openFaq === 3" class="mt-2 text-gray-600">
+            <div v-show="openFaq === 3" class="mt-3 text-gray-700 pl-8 pr-4 animate-fade-in">
               <p>
                 La rémunération dépend du type et de la durée du stage :
               </p>
@@ -303,15 +360,18 @@
             </div>
           </div>
           
-          <div class="border-b border-gray-200 pb-4">
+          <div class="border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="400">
             <button 
               @click="toggleFaq(4)" 
-              class="flex justify-between items-center w-full text-left font-semibold"
+              class="flex justify-between items-center w-full text-left font-bold text-primary hover:text-primary-light transition-colors duration-300"
             >
-              <span>Comment puis-je suivre l'état de ma demande ?</span>
-              <i :class="[openFaq === 4 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas']"></i>
+              <span class="flex items-center">
+                <i class="fas fa-search-location mr-3 text-accent-yellow text-xl"></i>
+                Comment puis-je suivre l'état de ma demande ?
+              </span>
+              <i :class="[openFaq === 4 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas transition-transform duration-300']"></i>
             </button>
-            <div v-show="openFaq === 4" class="mt-2 text-gray-600">
+            <div v-show="openFaq === 4" class="mt-3 text-gray-700 pl-8 pr-4 animate-fade-in">
               <p>
                 Après avoir soumis votre demande, vous recevrez un email de confirmation avec un numéro de référence.
                 Vous pourrez suivre l'état de votre demande en vous connectant à votre compte sur la plateforme.
@@ -320,15 +380,18 @@
             </div>
           </div>
           
-          <div class="border-b border-gray-200 pb-4">
+          <div class="border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="500">
             <button 
               @click="toggleFaq(5)" 
-              class="flex justify-between items-center w-full text-left font-semibold"
+              class="flex justify-between items-center w-full text-left font-bold text-primary hover:text-primary-light transition-colors duration-300"
             >
-              <span>Quels sont les documents requis pour postuler ?</span>
-              <i :class="[openFaq === 5 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas']"></i>
+              <span class="flex items-center">
+                <i class="fas fa-file-alt mr-3 text-accent-yellow text-xl"></i>
+                Quels sont les documents requis pour postuler ?
+              </span>
+              <i :class="[openFaq === 5 ? 'fa-chevron-up' : 'fa-chevron-down', 'fas transition-transform duration-300']"></i>
             </button>
-            <div v-show="openFaq === 5" class="mt-2 text-gray-600">
+            <div v-show="openFaq === 5" class="mt-3 text-gray-700 pl-8 pr-4 animate-fade-in">
               <p>
                 Les documents à fournir dépendent du type de stage, mais généralement vous devrez préparer :
               </p>
@@ -346,19 +409,22 @@
     </section>
     
     <!-- CTA Section -->
-    <section class="mb-12">
-      <div class="bg-gradient-to-r from-green-800 to-blue-900 rounded-lg shadow-md p-8 text-white text-center">
-        <h2 class="text-2xl font-bold mb-4">Prêt à lancer votre carrière ?</h2>
-        <p class="text-lg mb-6">
-          Rejoignez le Ministère de l'Économie et des Finances pour une expérience enrichissante
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <router-link to="/application" class="bg-white text-green-800 hover:bg-gray-100 py-2 px-6 rounded-md font-medium transition duration-200">
-            Postuler maintenant
-          </router-link>
-          <router-link to="/contact" class="border border-white text-white hover:bg-white hover:text-green-800 py-2 px-6 rounded-md font-medium transition duration-200">
-            Nous contacter
-          </router-link>
+    <section class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+      <div class="bg-gradient-to-r from-primary-dark via-primary to-secondary rounded-lg shadow-xl p-8 text-white text-center transform transition hover:shadow-2xl">
+        <div class="absolute top-0 left-0 w-full h-full bg-white opacity-5 rounded-lg" style="background-image: url('data:image/svg+xml,%3Csvg width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z%22 fill=%22%23fff%22 fill-opacity=%221%22 fill-rule=%22evenodd%22/%3E%3C/svg%3E')"></div>
+        <div class="relative z-10">
+          <h2 class="text-3xl font-bold mb-4" data-aos="fade-down" data-aos-delay="200">Prêt à lancer votre carrière ?</h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            Rejoignez le Ministère de l'Économie et des Finances pour une expérience enrichissante et développez vos compétences professionnelles
+          </p>
+          <div class="flex flex-wrap justify-center gap-6">
+            <router-link to="/application" class="bg-white text-primary hover:bg-gray-100 py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-file-signature mr-2"></i> Postuler maintenant
+            </router-link>
+            <router-link to="/contact" class="border-2 border-white text-white hover:bg-white hover:text-primary py-3 px-8 rounded-md font-bold transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-envelope mr-2"></i> Nous contacter
+            </router-link>
+          </div>
         </div>
       </div>
     </section>
