@@ -49,82 +49,154 @@
     </section>
     
     <!-- About Section -->
-    <section id="about" class="mb-12">
-      <h2 class="section-title">À propos du programme de stages</h2>
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <p class="text-gray-600 mb-4">
-          Le programme de stages du Ministère de l'Économie et des Finances du Bénin offre aux étudiants 
-          et jeunes diplômés l'opportunité d'acquérir une expérience professionnelle enrichissante 
-          au sein d'une institution gouvernementale de premier plan.
-        </p>
-        <p class="text-gray-600 mb-4">
-          Nos stages sont conçus pour vous permettre de:
-        </p>
-        <ul class="list-disc pl-5 mb-6 text-gray-600 space-y-2">
-          <li>Mettre en pratique vos connaissances théoriques dans un environnement professionnel</li>
-          <li>Développer de nouvelles compétences techniques et transversales</li>
-          <li>Comprendre le fonctionnement des finances publiques et de l'économie nationale</li>
-          <li>Travailler sur des projets concrets et impactants pour le développement du Bénin</li>
-          <li>Créer un réseau professionnel dans le secteur public</li>
-        </ul>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 rounded-md p-4">
-            <h3 class="text-lg font-semibold text-green-800 mb-2">Types de stages proposés</h3>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-start">
-                <i class="fas fa-graduation-cap text-green-700 mt-1 mr-2"></i>
-                <div>
-                  <span class="font-medium">Stage académique</span> - Pour les étudiants dans le cadre de leur cursus
+    <section id="about" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="section-title text-primary-dark relative pb-2 mb-6">
+        À propos du programme de stages
+        <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-orange"></span>
+      </h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- SVG Animation -->
+        <div class="order-2 lg:order-1 mt-8 lg:mt-0" data-aos="fade-right" data-aos-delay="300">
+          <div class="relative">
+            <img src="../assets/internship-illustration.svg" alt="Illustration du ministère" class="w-full max-w-xl mx-auto ministry-building-animated">
+            <div class="absolute -top-6 -right-6 w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center animate-float shadow-lg z-10">
+              <i class="fas fa-briefcase text-2xl text-white"></i>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-delay="300">
+          <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary-light">
+            <p class="text-gray-700 mb-4 text-lg">
+              Le programme de stages du Ministère de l'Économie et des Finances du Bénin offre aux étudiants 
+              et jeunes diplômés l'opportunité d'acquérir une expérience professionnelle enrichissante 
+              au sein d'une institution gouvernementale de premier plan.
+            </p>
+            <p class="text-gray-700 mb-4 font-medium text-lg">
+              Nos stages sont conçus pour vous permettre de:
+            </p>
+            <ul class="space-y-3 mb-6 text-gray-700">
+              <li class="flex items-start transform transition hover:-translate-x-1">
+                <div class="h-6 w-6 rounded-full bg-primary-light flex items-center justify-center mr-3 mt-0.5">
+                  <i class="fas fa-check text-white text-sm"></i>
                 </div>
+                <span>Mettre en pratique vos connaissances théoriques dans un environnement professionnel</span>
               </li>
-              <li class="flex items-start">
-                <i class="fas fa-briefcase text-green-700 mt-1 mr-2"></i>
-                <div>
-                  <span class="font-medium">Stage professionnel</span> - Pour les jeunes diplômés souhaitant acquérir de l'expérience
+              <li class="flex items-start transform transition hover:-translate-x-1">
+                <div class="h-6 w-6 rounded-full bg-primary-light flex items-center justify-center mr-3 mt-0.5">
+                  <i class="fas fa-check text-white text-sm"></i>
                 </div>
+                <span>Développer de nouvelles compétences techniques et transversales</span>
               </li>
-              <li class="flex items-start">
-                <i class="fas fa-search text-green-700 mt-1 mr-2"></i>
-                <div>
-                  <span class="font-medium">Stage de recherche</span> - Pour les étudiants en master ou doctorat
+              <li class="flex items-start transform transition hover:-translate-x-1">
+                <div class="h-6 w-6 rounded-full bg-primary-light flex items-center justify-center mr-3 mt-0.5">
+                  <i class="fas fa-check text-white text-sm"></i>
                 </div>
+                <span>Comprendre le fonctionnement des finances publiques et de l'économie nationale</span>
               </li>
-              <li class="flex items-start">
-                <i class="fas fa-eye text-green-700 mt-1 mr-2"></i>
-                <div>
-                  <span class="font-medium">Stage d'observation</span> - Stages courts de découverte du ministère
+              <li class="flex items-start transform transition hover:-translate-x-1">
+                <div class="h-6 w-6 rounded-full bg-primary-light flex items-center justify-center mr-3 mt-0.5">
+                  <i class="fas fa-check text-white text-sm"></i>
                 </div>
+                <span>Travailler sur des projets concrets et impactants pour le développement du Bénin</span>
+              </li>
+              <li class="flex items-start transform transition hover:-translate-x-1">
+                <div class="h-6 w-6 rounded-full bg-primary-light flex items-center justify-center mr-3 mt-0.5">
+                  <i class="fas fa-check text-white text-sm"></i>
+                </div>
+                <span>Créer un réseau professionnel dans le secteur public</span>
               </li>
             </ul>
           </div>
-          <div class="bg-gray-50 rounded-md p-4">
-            <h3 class="text-lg font-semibold text-blue-900 mb-2">Départements d'accueil</h3>
-            <ul class="space-y-2 text-gray-600">
-              <li class="flex items-start">
-                <i class="fas fa-chart-pie text-blue-800 mt-1 mr-2"></i>
-                <div>Direction Générale du Budget</div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-money-bill-wave text-blue-800 mt-1 mr-2"></i>
-                <div>Direction Générale du Trésor</div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-calculator text-blue-800 mt-1 mr-2"></i>
-                <div>Direction Générale des Impôts</div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-ship text-blue-800 mt-1 mr-2"></i>
-                <div>Direction Générale des Douanes</div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-file-contract text-blue-800 mt-1 mr-2"></i>
-                <div>Direction des Marchés Publics</div>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-desktop text-blue-800 mt-1 mr-2"></i>
-                <div>Direction des Systèmes d'Information</div>
-              </li>
-            </ul>
+        </div>
+      </div>
+      
+      <!-- Types of Internships and Departments -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold text-primary-dark mb-4 flex items-center">
+            <i class="fas fa-graduation-cap text-primary-light mr-3 text-2xl"></i>
+            Types de stages proposés
+          </h3>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-3">
+                <i class="fas fa-university"></i>
+              </div>
+              <div>
+                <span class="font-bold text-primary-dark">Stage académique</span>
+                <p class="text-sm mt-1">Pour les étudiants dans le cadre de leur cursus universitaire</p>
+              </div>
+            </li>
+            <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-light flex items-center justify-center text-white mr-3">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div>
+                <span class="font-bold text-primary-dark">Stage professionnel</span>
+                <p class="text-sm mt-1">Pour les jeunes diplômés souhaitant acquérir de l'expérience</p>
+              </div>
+            </li>
+            <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white mr-3">
+                <i class="fas fa-search"></i>
+              </div>
+              <div>
+                <span class="font-bold text-primary-dark">Stage de recherche</span>
+                <p class="text-sm mt-1">Pour les étudiants en master ou doctorat</p>
+              </div>
+            </li>
+            <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary-light flex items-center justify-center text-white mr-3">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div>
+                <span class="font-bold text-primary-dark">Stage d'observation</span>
+                <p class="text-sm mt-1">Stages courts de découverte du ministère</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-secondary" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-bold text-secondary-dark mb-4 flex items-center">
+            <i class="fas fa-building text-secondary-light mr-3 text-2xl"></i>
+            Départements d'accueil
+          </h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-chart-pie text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction Générale du Budget</div>
+            </div>
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-money-bill-wave text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction Générale du Trésor</div>
+            </div>
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-calculator text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction Générale des Impôts</div>
+            </div>
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-ship text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction Générale des Douanes</div>
+            </div>
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-file-contract text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction des Marchés Publics</div>
+            </div>
+            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-desktop text-secondary text-xl mb-2"></i>
+              <div class="font-medium">Direction des Systèmes d'Information</div>
+            </div>
+          </div>
+          
+          <div class="mt-4 flex justify-center">
+            <router-link to="/application" class="btn-secondary inline-flex items-center mt-2 px-4 py-2 text-sm transform transition hover:scale-105">
+              <i class="fas fa-arrow-right mr-2"></i> Postuler maintenant
+            </router-link>
           </div>
         </div>
       </div>
