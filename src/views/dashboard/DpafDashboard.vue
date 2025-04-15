@@ -1,4 +1,3 @@
-
 <template>
   <div class="min-h-screen bg-gray-100 flex flex-col">
     <header class="bg-primary shadow fixed top-0 w-full z-20">
@@ -18,7 +17,7 @@
 
     <div class="flex pt-16">
       <Sidebar class="fixed left-0 top-16 h-[calc(100vh-4rem)] z-10" />
-      
+
       <div class="flex-1 ml-64 p-6">
         <!-- Statistiques -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" data-aos="fade-up">
@@ -29,7 +28,7 @@
             </div>
             <p class="text-3xl font-bold text-primary mt-2">{{ stats.nouveaux }}</p>
           </div>
-          
+
           <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
             <div class="flex justify-between items-center">
               <h3 class="text-lg font-semibold text-gray-800">En cours d'analyse</h3>
@@ -37,7 +36,7 @@
             </div>
             <p class="text-3xl font-bold text-warning mt-2">{{ stats.enCours }}</p>
           </div>
-          
+
           <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
             <div class="flex justify-between items-center">
               <h3 class="text-lg font-semibold text-gray-800">Confirmés</h3>
@@ -86,35 +85,35 @@
             <h2 class="text-lg font-medium text-gray-900">Gestion des demandes de stages</h2>
           </div>
           <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200">
-              <thead class="bg-gray-50">
+            <table class="min-w-full divide-y divide-gray-200 table-auto">
+              <thead>
                 <tr>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stagiaire</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Structure Demandée</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type de Stage</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date Soumission</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Statut</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Stagiaire</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Structure Demandée</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Type de Stage</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Date Soumission</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Statut</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Actions</th>
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
                 <tr v-for="demande in filteredDemandes" :key="demande.id" class="hover:bg-gray-50">
-                  <td class="px-6 py-4">
+                  <td class="px-6 py-4 sm:table-cell">
                     <div class="text-sm text-gray-900">{{ demande.nom }}</div>
                     <div class="text-sm text-gray-500">{{ demande.email }}</div>
                   </td>
-                  <td class="px-6 py-4">
+                  <td class="px-6 py-4 sm:table-cell">
                     <div class="text-sm text-gray-900">{{ demande.structure }}</div>
                   </td>
-                  <td class="px-6 py-4 text-sm text-gray-500">{{ demande.typeStage }}</td>
-                  <td class="px-6 py-4 text-sm text-gray-500">{{ formatDate(demande.dateSoumission) }}</td>
-                  <td class="px-6 py-4">
+                  <td class="px-6 py-4 text-sm text-gray-500 sm:table-cell">{{ demande.typeStage }}</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 sm:table-cell">{{ formatDate(demande.dateSoumission) }}</td>
+                  <td class="px-6 py-4 sm:table-cell">
                     <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full"
                           :class="getStatusClass(demande.status)">
                       {{ getStatusLabel(demande.status) }}
                     </span>
                   </td>
-                  <td class="px-6 py-4 text-sm font-medium space-x-2">
+                  <td class="px-6 py-4 text-sm font-medium space-x-2 sm:table-cell">
                     <button @click="viewDetails(demande)" class="text-primary hover:text-primary-dark" title="Voir les détails">
                       <i class="fas fa-eye"></i>
                     </button>
@@ -190,7 +189,7 @@ export default {
         const matchSearch = !filters.value.search || 
           demande.nom.toLowerCase().includes(filters.value.search.toLowerCase()) ||
           demande.email.toLowerCase().includes(filters.value.search.toLowerCase())
-        
+
         const matchStatus = !filters.value.status || demande.status === filters.value.status
         const matchStructure = !filters.value.structure || demande.structure === filters.value.structure
 
