@@ -109,12 +109,10 @@
         </div>
       </div>
     </div>
-    <FooterAdmin class="mt-auto" />
   </div>
 </template>
 
 <script>
-import FooterAdmin from '../components/FooterAdmin.vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 import Sidebar from '../components/Sidebar.vue'
@@ -122,8 +120,7 @@ import Sidebar from '../components/Sidebar.vue'
 export default {
   name: 'Dashboard',
   components: {
-    Sidebar,
-    FooterAdmin
+    Sidebar
   },
   setup() {
     const store = useStore()
