@@ -1,6 +1,6 @@
 
 <template>
-  <div class="min-h-screen bg-gray-100">
+  <div class="min-h-screen bg-gray-100 flex flex-col">
     <!-- Header fixe -->
     <header class="bg-primary shadow fixed top-0 w-full z-20">
       <div class="px-4 py-4 flex justify-between items-center">
@@ -109,10 +109,12 @@
         </div>
       </div>
     </div>
+    <FooterAdmin class="mt-auto" />
   </div>
 </template>
 
 <script>
+import FooterAdmin from '../components/FooterAdmin.vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 import Sidebar from '../components/Sidebar.vue'
@@ -120,7 +122,8 @@ import Sidebar from '../components/Sidebar.vue'
 export default {
   name: 'Dashboard',
   components: {
-    Sidebar
+    Sidebar,
+    FooterAdmin
   },
   setup() {
     const store = useStore()
