@@ -177,7 +177,7 @@ export default {
         id: 1,
         nom: 'Jean Dupont',
         email: 'jean.dupont@email.com',
-        structure: 'Direction des Systèmes d'Information',
+        structure: "Direction des Systèmes d'Information",
         typeStage: 'Stage académique',
         dateSoumission: '2024-03-15',
         status: 'nouveau'
