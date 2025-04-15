@@ -1,9 +1,9 @@
 
 <template>
-  <div class="min-h-screen bg-gray-100">
-    <Sidebar class="fixed top-0 left-0 h-full z-10" />
+  <div class="min-h-screen bg-gray-100 flex">
+    <Sidebar class="fixed top-[64px] left-0 h-[calc(100vh-64px)] z-10" />
     
-    <div class="pl-64">
+    <div class="pl-64 w-full">
       <!-- En-tête du dashboard -->
       <header class="bg-primary shadow">
         <div class="px-4 py-4 flex justify-between items-center">
