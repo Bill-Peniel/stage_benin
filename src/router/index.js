@@ -41,6 +41,8 @@ const routes = [
     beforeEnter: (to, from, next) => {
       if (!store.getters.hasAdminAccess) {
         next('/login')
+      } else if (store.getters.isDpaf) {
+        next('/dashboard/dpaf')
       } else {
         next()
       }
@@ -62,6 +64,19 @@ const routes = [
         component: () => import('../views/dashboard/Tuteurs.vue')
       }
     ]
+  },
+  {
+    path: '/dashboard/dpaf',
+    name: 'DpafDashboard',
+    component: () => import('../views/dashboard/DpafDashboard.vue'),
+    meta: { requiresAuth: true, requiresDpaf: true },
+    beforeEnter: (to, from, next) => {
+      if (!store.getters.isDpaf) {
+        next('/login')
+      } else {
+        next()
+      }
+    }
   }
 ]
 
