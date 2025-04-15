@@ -22,14 +22,16 @@
       <div class="flex-1 ml-64 p-6 pb-24"> <!-- pb-24 pour éviter que le contenu ne soit caché par le footer -->
         <!-- Statistiques -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow transform hover:scale-105 transition-transform duration-300 hover:shadow-lg"
+               data-aos="fade-up" data-aos-delay="100">
             <div class="flex justify-between items-center">
               <h3 class="text-lg font-semibold text-gray-800">Demandes en attente</h3>
               <i class="fas fa-clock text-2xl text-primary"></i>
             </div>
             <p class="text-3xl font-bold text-primary mt-2">12</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div class="bg-white p-6 rounded-lg shadow transform hover:scale-105 transition-transform duration-300 hover:shadow-lg"
+               data-aos="fade-up" data-aos-delay="200">
             <div class="flex justify-between items-center">
               <h3 class="text-lg font-semibold text-gray-800">Stages en cours</h3>
               <i class="fas fa-user-graduate text-2xl text-secondary"></i>
@@ -53,7 +55,8 @@
         </div>
 
         <!-- Liste des demandes récentes -->
-        <div class="bg-white shadow rounded-lg">
+        <div class="bg-white shadow rounded-lg transform transition-all duration-300 hover:shadow-xl"
+             data-aos="fade-up" data-aos-delay="400">
           <div class="px-4 py-5 border-b border-gray-200 sm:px-6 flex justify-between items-center">
             <h2 class="text-lg font-medium text-gray-900">Demandes récentes</h2>
             <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">
@@ -73,7 +76,8 @@
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
-                <tr v-for="n in 5" :key="n">
+                <tr v-for="n in 5" :key="n" 
+                    class="transform transition-all duration-200 hover:bg-gray-50 hover:shadow">
                   <td class="px-6 py-4 whitespace-nowrap">
                     <div class="text-sm font-medium text-gray-900">Jean Dupont</div>
                   </td>
