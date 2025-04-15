@@ -5,6 +5,9 @@ import Contact from '../views/Contact.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 
+import Dashboard from '../views/Dashboard.vue'
+import store from '../store'
+
 const routes = [
   {
     path: '/',
@@ -30,6 +33,19 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+    meta: { requiresAuth: true, requiresAdmin: true },
+    beforeEnter: (to, from, next) => {
+      if (!store.getters.hasAdminAccess) {
+        next('/login')
+      } else {
+        next()
+      }
+    }
   }
 ]
 
