@@ -16,6 +16,7 @@
         <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000">
           <div class="max-w-md mx-auto">
             <div class="text-center mb-8">
+              <img src="../assets/logo.svg" alt="Logo" class="h-20 mx-auto mb-4">
               <h1 class="text-3xl font-bold text-primary-dark relative inline-block">
                 Connexion
                 <span class="absolute bottom-0 left-0 w-full h-1 bg-primary-light transform scale-x-50"></span>
