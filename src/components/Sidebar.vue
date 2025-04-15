@@ -34,9 +34,3 @@ export default {
   }
 }
 </script>
-
-<script>
-export default {
-  name: 'Sidebar'
-}
-</script>
