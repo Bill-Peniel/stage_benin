@@ -1,5 +1,5 @@
 <template>
-  <aside class="bg-primary w-64 text-white shadow-lg overflow-y-auto transform transition-all duration-300 ease-in-out md:translate-x-0" :class="{ '-translate-x-full': !isSidebarOpen }" data-aos="fade-right">
+  <aside class="bg-primary w-64 text-white shadow-lg overflow-y-auto transform transition-all duration-300 ease-in-out fixed md:translate-x-0 z-50" :class="{ '-translate-x-full': !isSidebarOpen }" data-aos="fade-right">
     <button @click="toggleSidebar" class="md:hidden fixed top-20 left-4 z-50 bg-primary text-white p-2 rounded-full">
       <i class="fas" :class="isSidebarOpen ? 'fa-times' : 'fa-bars'"></i>
     </button>

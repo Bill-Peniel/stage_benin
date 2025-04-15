@@ -18,9 +18,9 @@
     <div class="flex pt-16">
       <Sidebar class="fixed left-0 top-16 h-[calc(100vh-4rem)] z-10" />
 
-      <div class="flex-1 ml-64 p-6">
+      <div class="flex-1 md:ml-64 p-4 md:p-6">
         <!-- Statistiques -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" data-aos="fade-up">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8" data-aos="fade-up">
           <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
             <div class="flex justify-between items-center">
               <h3 class="text-lg font-semibold text-gray-800">Nouvelles demandes</h3>
@@ -84,8 +84,8 @@
           <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
             <h2 class="text-lg font-medium text-gray-900">Gestion des demandes de stages</h2>
           </div>
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200 table-auto">
+          <div class="overflow-x-auto -mx-4 sm:mx-0">
+            <table class="min-w-full divide-y divide-gray-200 table-auto whitespace-nowrap md:whitespace-normal">
               <thead>
                 <tr>
                   <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase sm:table-cell">Stagiaire</th>
