@@ -19,7 +19,7 @@
       <Sidebar class="fixed left-0 top-16 h-[calc(100vh-4rem)] z-10" /> <!-- top-16 pour le positionner sous le header -->
       
       <!-- Contenu principal -->
-      <div class="flex-1 ml-64 p-6 pb-24"> <!-- pb-24 pour éviter que le contenu ne soit caché par le footer -->
+      <div class="flex-1 ml-64 p-6 pb-16"> <!-- pb-24 pour éviter que le contenu ne soit caché par le footer -->
         <!-- Statistiques -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div class="bg-white p-6 rounded-lg shadow">

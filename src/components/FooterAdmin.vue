@@ -1,13 +1,10 @@
 
 <template>
-  <footer class="bg-primary text-white py-4 px-6">
-    <div class="flex justify-between items-center">
-      <div>
-        <p class="text-sm">&copy; {{ currentYear }} MEF Bénin - Administration</p>
-      </div>
-      <div class="flex space-x-4 text-sm">
+  <footer class="bg-primary text-white py-2 px-4">
+    <div class="flex justify-between items-center text-xs">
+      <p>&copy; {{ currentYear }} MEF Bénin</p>
+      <div class="flex space-x-3">
         <a href="#" class="hover:text-accent-yellow">Aide</a>
-        <a href="#" class="hover:text-accent-yellow">Documentation</a>
         <a href="#" class="hover:text-accent-yellow">Support</a>
       </div>
     </div>
