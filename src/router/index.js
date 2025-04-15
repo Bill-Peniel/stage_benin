@@ -36,7 +36,6 @@ const routes = [
   },
   {
     path: '/dashboard',
-    name: 'Dashboard',
     component: Dashboard,
     meta: { requiresAuth: true, requiresAdmin: true },
     beforeEnter: (to, from, next) => {
@@ -45,7 +44,24 @@ const routes = [
       } else {
         next()
       }
-    }
+    },
+    children: [
+      {
+        path: '',
+        name: 'Dashboard',
+        component: Dashboard
+      },
+      {
+        path: 'structures',
+        name: 'Structures',
+        component: () => import('../views/dashboard/Structures.vue')
+      },
+      {
+        path: 'tuteurs',
+        name: 'Tuteurs',
+        component: () => import('../views/dashboard/Tuteurs.vue')
+      }
+    ]
   }
 ]
 
