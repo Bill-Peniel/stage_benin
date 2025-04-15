@@ -214,15 +214,24 @@ export default {
         error.value = ''
         
         try {
-          await store.dispatch('login', {
+          // Tentative de connexion avec les identifiants fournis
+          const user = await store.dispatch('login', {
             email: form.email,
             password: form.password
           })
           
-          // Redirect to home page or dashboard
-          router.push('/')
+          // Redirection en fonction du rôle de l'utilisateur
+          if (['admin', 'dpaf', 'structure', 'tuteur'].includes(user.role)) {
+            // Rediriger vers le tableau de bord administratif
+            router.push('/dashboard')
+          } else {
+            // Rediriger les stagiaires vers leur espace personnel
+            router.push('/espace-stagiaire')
+          }
+          
         } catch (err) {
-          error.value = 'Identifiants incorrects. Veuillez réessayer.'
+          // Afficher le message d'erreur
+          error.value = err.message || 'Identifiants incorrects. Veuillez réessayer.'
         } finally {
           isSubmitting.value = false
         }

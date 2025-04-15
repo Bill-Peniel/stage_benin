@@ -5,6 +5,45 @@ export default createStore({
     // User information
     user: null,
     
+    // Utilisateurs prédéfinis pour le test (simulation de base de données)
+    predefinedUsers: [
+      {
+        id: 'admin-1',
+        email: 'admin@admin.com',
+        password: 'admin2025',
+        name: 'Administrateur',
+        role: 'admin'
+      },
+      {
+        id: 'dpaf-1',
+        email: 'dpaf@dpaf.com',
+        password: 'dpaf2025',
+        name: 'Direction du Personnel Administratif et Financier',
+        role: 'dpaf'
+      },
+      {
+        id: 'strc-1',
+        email: 'strc@strc.com',
+        password: 'strc2025',
+        name: 'Structure de Stage',
+        role: 'structure'
+      },
+      {
+        id: 'tuteur-1',
+        email: 'tuteur@tuteur.com',
+        password: 'tuteur2025',
+        name: 'Tuteur de Stage',
+        role: 'tuteur'
+      },
+      {
+        id: 'stg-1',
+        email: 'stg@stg.com',
+        password: 'stg2025',
+        name: 'Stagiaire Test',
+        role: 'stagiaire'
+      }
+    ],
+    
     // Application form data
     applicationForm: {
       // Step 1: Personal Information
@@ -172,20 +211,42 @@ export default createStore({
       })
     },
     
-    login({ commit }, credentials) {
-      return new Promise((resolve) => {
-        // In a real application, this would be an API call
+    login({ commit, state }, credentials) {
+      return new Promise((resolve, reject) => {
+        // Simuler un délai d'authentification (comme avec une API)
         setTimeout(() => {
-          // Simulate successful login
-          const user = {
-            id: 1,
-            email: credentials.email,
-            name: 'Utilisateur Test',
-            role: 'student'
-          }
+          // Vérifier d'abord les utilisateurs prédéfinis
+          const predefinedUser = state.predefinedUsers.find(
+            u => u.email === credentials.email && u.password === credentials.password
+          )
           
-          commit('setUser', user)
-          resolve(user)
+          if (predefinedUser) {
+            // Créer un objet utilisateur sans exposer le mot de passe
+            const userToStore = {
+              id: predefinedUser.id,
+              email: predefinedUser.email,
+              name: predefinedUser.name,
+              role: predefinedUser.role
+            }
+            
+            commit('setUser', userToStore)
+            resolve(userToStore)
+          } else {
+            // Vérifier si c'est le compte de test stagiaire
+            if (credentials.email === 'stg@stg.com' && credentials.password === 'stg2025') {
+              const testUser = {
+                id: 'stg-1',
+                email: 'stg@stg.com',
+                name: 'Stagiaire Test',
+                role: 'stagiaire'
+              }
+              commit('setUser', testUser)
+              resolve(testUser)
+            } else {
+              // Identifiants incorrects
+              reject(new Error('Identifiants incorrects. Veuillez réessayer.'))
+            }
+          }
         }, 800)
       })
     },
@@ -193,24 +254,27 @@ export default createStore({
     logout({ commit }) {
       return new Promise((resolve) => {
         commit('clearUser')
-        resolve()
+        // Simuler la déconnexion d'une API
+        setTimeout(() => {
+          resolve()
+        }, 300)
       })
     },
     
     register({ commit }, userData) {
       return new Promise((resolve) => {
-        // In a real application, this would be an API call
+        // Simuler un délai d'enregistrement (comme avec une API)
         setTimeout(() => {
-          // Simulate successful registration
-          const user = {
-            id: Math.floor(Math.random() * 1000),
+          // Créer un nouvel utilisateur avec le rôle stagiaire
+          const newUser = {
+            id: 'stg-' + Math.floor(Math.random() * 1000),
             email: userData.email,
             name: `${userData.firstName} ${userData.lastName}`,
-            role: 'student'
+            role: 'stagiaire'
           }
           
-          commit('setUser', user)
-          resolve(user)
+          commit('setUser', newUser)
+          resolve(newUser)
         }, 800)
       })
     }
@@ -222,6 +286,31 @@ export default createStore({
     applicationProgress: state => {
       const steps = 4
       return (state.applicationForm.currentStep / steps) * 100
+    },
+    // Getters pour vérifier le rôle de l'utilisateur
+    isAdmin: state => state.user && state.user.role === 'admin',
+    isDpaf: state => state.user && state.user.role === 'dpaf',
+    isStructure: state => state.user && state.user.role === 'structure',
+    isTuteur: state => state.user && state.user.role === 'tuteur',
+    isStagiaire: state => state.user && state.user.role === 'stagiaire',
+    // Permet de vérifier si l'utilisateur a accès à un tableau de bord administratif
+    hasAdminAccess: state => {
+      if (!state.user) return false;
+      return ['admin', 'dpaf', 'structure', 'tuteur'].includes(state.user.role);
+    },
+    // Retourne le nom du rôle en français pour l'affichage
+    roleDisplay: state => {
+      if (!state.user) return '';
+      
+      const roleMap = {
+        'admin': 'Administrateur',
+        'dpaf': 'Direction du Personnel',
+        'structure': 'Structure de Stage',
+        'tuteur': 'Tuteur de Stage',
+        'stagiaire': 'Stagiaire'
+      };
+      
+      return roleMap[state.user.role] || state.user.role;
     }
   }
 })

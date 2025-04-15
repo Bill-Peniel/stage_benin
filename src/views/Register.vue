@@ -356,7 +356,8 @@ export default {
         error.value = ''
         
         try {
-          await store.dispatch('register', {
+          // Création d'un nouveau compte stagiaire
+          const user = await store.dispatch('register', {
             firstName: form.firstName,
             lastName: form.lastName,
             email: form.email,
@@ -364,8 +365,20 @@ export default {
             password: form.password
           })
           
-          // Redirect to home page or dashboard
-          router.push('/')
+          // Afficher un message de succès
+          const successMessage = `Félicitations ${user.name} ! Votre compte a été créé avec succès.`
+          
+          // Rediriger vers la page de demande de stage
+          setTimeout(() => {
+            router.push({
+              path: '/faire-une-demande',
+              query: { 
+                newUser: 'true',
+                message: successMessage 
+              }
+            })
+          }, 800)
+          
         } catch (err) {
           error.value = 'Une erreur est survenue lors de l\'inscription. Veuillez réessayer.'
         } finally {
