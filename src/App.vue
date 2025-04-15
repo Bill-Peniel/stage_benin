@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col min-h-screen">
-    <Header />
+    <Header v-if="!isDashboardRoute" />
     <main class="flex-grow">
       <router-view />
     </main>
-    <Footer />
+    <Footer v-if="!isDashboardRoute" />
   </div>
 </template>
 
@@ -17,6 +17,11 @@ export default {
   components: {
     Header,
     Footer
+  },
+  computed: {
+    isDashboardRoute() {
+      return this.$route.path.startsWith('/dashboard')
+    }
   }
 }
 </script>
