@@ -1,6 +1,6 @@
 
 <template>
-  <aside class="bg-primary h-full w-64 text-white">
+  <aside class="bg-primary h-screen w-64 text-white shadow-lg">
     <div class="p-4 border-b border-primary-dark">
       <h2 class="text-xl font-bold">Administration</h2>
     </div>
