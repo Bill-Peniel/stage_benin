@@ -4,7 +4,10 @@
     <!-- Header fixe -->
     <header class="bg-primary shadow fixed top-0 w-full z-20">
       <div class="px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-white">Tableau de bord administratif</h1>
+        <div class="flex items-center gap-4">
+          <img src="@/assets/ministry-logo.svg" alt="Logo du ministère" class="h-12 w-auto" />
+          <h1 class="text-2xl font-bold text-white">Tableau de bord administratif</h1>
+        </div>
         <div class="flex items-center space-x-4">
           <span class="text-white">{{ store.getters.roleDisplay }}</span>
           <button @click="logout" class="text-white hover:text-accent-yellow">
