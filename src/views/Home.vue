@@ -1,45 +1,45 @@
 <template>
-  <div class="page-container">
+  <div class="page-container px-4 sm:px-6">
     <!-- Hero Section -->
-    <section class="relative bg-accent rounded-xl overflow-hidden mb-12">
+    <section class="relative bg-accent rounded-xl overflow-hidden mb-8 sm:mb-12">
       <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-secondary"></div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-6 md:px-12">
-        <div class="flex flex-col justify-center" data-aos="fade-right" data-aos-duration="1000">
-          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 py-8 sm:py-12 px-4 sm:px-6 md:px-12">
+        <div class="flex flex-col justify-center space-y-4 sm:space-y-6" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 animate-fade-in leading-tight">
             Programme de Stages du Ministère de l'Économie et des Finances
           </h1>
-          <p class="text-lg text-gray-600 mb-6">
+          <p class="text-base sm:text-lg text-gray-600">
             Découvrez les opportunités de stage au sein du Ministère de l'Économie et des Finances du Bénin 
             et développez vos compétences professionnelles.
           </p>
-          <div class="flex flex-wrap gap-4">
-            <router-link to="/application" class="btn-primary text-center transform transition hover:scale-105">
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <router-link to="/application" class="btn-primary text-center transform transition hover:scale-105 w-full sm:w-auto">
               Faire une demande
             </router-link>
-            <a href="#about" class="btn-outline text-center transform transition hover:scale-105">
+            <a href="#about" class="btn-outline text-center transform transition hover:scale-105 w-full sm:w-auto">
               En savoir plus
             </a>
           </div>
         </div>
         <div class="flex justify-center items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-          <div class="relative h-64 w-full md:h-80 overflow-hidden rounded-lg shadow-lg transform transition hover:scale-102 hover:shadow-xl">
+          <div class="relative h-[300px] sm:h-64 md:h-80 w-full overflow-hidden rounded-lg shadow-lg transform transition hover:scale-102 hover:shadow-xl">
             <div class="absolute inset-0 bg-gradient-to-r from-primary-dark to-secondary-dark opacity-90"></div>
             <div class="relative z-10 h-full flex flex-col justify-center items-center text-white text-center p-6">
-              <i class="fas fa-graduation-cap text-5xl mb-4 animate-bounce-slow"></i>
-              <h2 class="text-2xl font-bold mb-2">Investissez dans votre avenir</h2>
-              <p class="mb-4">Rejoignez une institution gouvernementale de premier plan</p>
-              <div class="grid grid-cols-3 gap-4 w-full max-w-xs">
+              <i class="fas fa-graduation-cap text-4xl sm:text-5xl mb-4 animate-bounce-slow"></i>
+              <h2 class="text-xl sm:text-2xl font-bold mb-2">Investissez dans votre avenir</h2>
+              <p class="mb-4 text-sm sm:text-base">Rejoignez une institution gouvernementale de premier plan</p>
+              <div class="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-xs">
                 <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
-                  <div class="text-xl font-bold text-accent-yellow">+50</div>
-                  <div class="text-sm">Stages</div>
+                  <div class="text-lg sm:text-xl font-bold text-accent-yellow">+50</div>
+                  <div class="text-xs sm:text-sm">Stages</div>
                 </div>
                 <div class="text-center" data-aos="zoom-in" data-aos-delay="800">
-                  <div class="text-xl font-bold text-accent-teal">8</div>
-                  <div class="text-sm">Départements</div>
+                  <div class="text-lg sm:text-xl font-bold text-accent-teal">8</div>
+                  <div class="text-xs sm:text-sm">Départements</div>
                 </div>
                 <div class="text-center" data-aos="zoom-in" data-aos-delay="1000">
-                  <div class="text-xl font-bold text-accent-orange">+500</div>
-                  <div class="text-sm">Stagiaires</div>
+                  <div class="text-lg sm:text-xl font-bold text-accent-orange">+500</div>
+                  <div class="text-xs sm:text-sm">Stagiaires</div>
                 </div>
               </div>
             </div>
@@ -49,19 +49,19 @@
     </section>
     
     <!-- About Section -->
-    <section id="about" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="section-title text-primary-dark relative pb-2 mb-6">
+    <section id="about" class="mb-8 sm:mb-12 px-4 sm:px-6" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="section-title text-primary-dark relative pb-2 mb-6 text-xl sm:text-2xl font-bold">
         À propos du programme de stages
         <span class="absolute bottom-0 left-0 w-16 h-1 bg-accent-orange"></span>
       </h2>
       
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
         <!-- SVG Animation -->
         <div class="order-2 lg:order-1 mt-8 lg:mt-0" data-aos="fade-right" data-aos-delay="300">
           <div class="relative">
-            <img src="../assets/internship-illustration.svg" alt="Illustration du ministère" class="w-full max-w-xl mx-auto ministry-building-animated">
-            <div class="absolute -top-6 -right-6 w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center animate-float shadow-lg z-10">
-              <i class="fas fa-briefcase text-2xl text-white"></i>
+            <img src="../assets/internship-illustration.svg" alt="Illustration du ministère" class="w-full max-w-[250px] sm:max-w-xl mx-auto ministry-building-animated">
+            <div class="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-12 sm:w-16 h-12 sm:h-16 bg-accent-teal rounded-full flex items-center justify-center animate-float shadow-lg z-10">
+              <i class="fas fa-briefcase text-xl sm:text-2xl text-white"></i>
             </div>
           </div>
         </div>
@@ -114,87 +114,87 @@
       </div>
       
       <!-- Types of Internships and Departments -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-primary" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-bold text-primary-dark mb-4 flex items-center">
-            <i class="fas fa-graduation-cap text-primary-light mr-3 text-2xl"></i>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mt-8 sm:mt-10">
+        <div class="bg-white rounded-lg shadow-lg p-4 sm:p-6 border-t-4 border-primary" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-lg sm:text-xl font-bold text-primary-dark mb-4 flex items-center">
+            <i class="fas fa-graduation-cap text-primary-light mr-3 text-xl sm:text-2xl"></i>
             Types de stages proposés
           </h3>
-          <ul class="space-y-4 text-gray-700">
+          <ul class="space-y-3 sm:space-y-4 text-gray-700">
             <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-3">
-                <i class="fas fa-university"></i>
+              <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-white mr-3">
+                <i class="fas fa-university text-sm sm:text-base"></i>
               </div>
               <div>
-                <span class="font-bold text-primary-dark">Stage académique</span>
-                <p class="text-sm mt-1">Pour les étudiants dans le cadre de leur cursus universitaire</p>
+                <span class="font-bold text-primary-dark text-sm sm:text-base">Stage académique</span>
+                <p class="text-xs sm:text-sm mt-1">Pour les étudiants dans le cadre de leur cursus universitaire</p>
               </div>
             </li>
             <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-light flex items-center justify-center text-white mr-3">
-                <i class="fas fa-briefcase"></i>
+              <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-light flex items-center justify-center text-white mr-3">
+                <i class="fas fa-briefcase text-sm sm:text-base"></i>
               </div>
               <div>
-                <span class="font-bold text-primary-dark">Stage professionnel</span>
-                <p class="text-sm mt-1">Pour les jeunes diplômés souhaitant acquérir de l'expérience</p>
+                <span class="font-bold text-primary-dark text-sm sm:text-base">Stage professionnel</span>
+                <p class="text-xs sm:text-sm mt-1">Pour les jeunes diplômés souhaitant acquérir de l'expérience</p>
               </div>
             </li>
             <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white mr-3">
-                <i class="fas fa-search"></i>
+              <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary flex items-center justify-center text-white mr-3">
+                <i class="fas fa-search text-sm sm:text-base"></i>
               </div>
               <div>
-                <span class="font-bold text-primary-dark">Stage de recherche</span>
-                <p class="text-sm mt-1">Pour les étudiants en master ou doctorat</p>
+                <span class="font-bold text-primary-dark text-sm sm:text-base">Stage de recherche</span>
+                <p class="text-xs sm:text-sm mt-1">Pour les étudiants en master ou doctorat</p>
               </div>
             </li>
             <li class="flex items-start bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary-light flex items-center justify-center text-white mr-3">
-                <i class="fas fa-eye"></i>
+              <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-secondary-light flex items-center justify-center text-white mr-3">
+                <i class="fas fa-eye text-sm sm:text-base"></i>
               </div>
               <div>
-                <span class="font-bold text-primary-dark">Stage d'observation</span>
-                <p class="text-sm mt-1">Stages courts de découverte du ministère</p>
+                <span class="font-bold text-primary-dark text-sm sm:text-base">Stage d'observation</span>
+                <p class="text-xs sm:text-sm mt-1">Stages courts de découverte du ministère</p>
               </div>
             </li>
           </ul>
         </div>
         
-        <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-secondary" data-aos="fade-up" data-aos-delay="400">
-          <h3 class="text-xl font-bold text-secondary-dark mb-4 flex items-center">
-            <i class="fas fa-building text-secondary-light mr-3 text-2xl"></i>
+        <div class="bg-white rounded-lg shadow-lg p-4 sm:p-6 border-t-4 border-secondary" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-lg sm:text-xl font-bold text-secondary-dark mb-4 flex items-center">
+            <i class="fas fa-building text-secondary-light mr-3 text-xl sm:text-2xl"></i>
             Départements d'accueil
           </h3>
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-chart-pie text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction Générale du Budget</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-chart-pie text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction Générale du Budget</div>
             </div>
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-money-bill-wave text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction Générale du Trésor</div>
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-money-bill-wave text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction Générale du Trésor</div>
             </div>
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-calculator text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction Générale des Impôts</div>
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-calculator text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction Générale des Impôts</div>
             </div>
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-ship text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction Générale des Douanes</div>
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-ship text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction Générale des Douanes</div>
             </div>
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-file-contract text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction des Marchés Publics</div>
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-file-contract text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction des Marchés Publics</div>
             </div>
-            <div class="bg-accent rounded-lg p-3 transform transition hover:scale-102 hover:shadow-md">
-              <i class="fas fa-desktop text-secondary text-xl mb-2"></i>
-              <div class="font-medium">Direction des Systèmes d'Information</div>
+            <div class="bg-accent rounded-lg p-2 sm:p-3 transform transition hover:scale-102 hover:shadow-md">
+              <i class="fas fa-desktop text-secondary text-lg sm:text-xl mb-2"></i>
+              <div class="font-medium text-sm sm:text-base">Direction des Systèmes d'Information</div>
             </div>
           </div>
           
           <div class="mt-4 flex justify-center">
-            <router-link to="/application" class="btn-secondary inline-flex items-center mt-2 px-4 py-2 text-sm transform transition hover:scale-105">
+            <router-link to="/application" class="btn-secondary inline-flex items-center mt-2 px-3 sm:px-4 py-2 text-sm transform transition hover:scale-105 w-full sm:w-auto text-center">
               <i class="fas fa-arrow-right mr-2"></i> Postuler maintenant
             </router-link>
           </div>
@@ -249,7 +249,9 @@
         </div>
         <div class="mt-10 text-center" data-aos="zoom-in" data-aos-delay="1000">
           <router-link to="/application" class="btn-primary px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transform transition hover:scale-105">
-            Commencer ma demande <i class="fas fa-arrow-right ml-2"></i>
+            <span class="hidden sm:inline">Commencer ma demande</span>
+            <span class="sm:hidden">Commencer</span>
+            <i class="fas fa-arrow-right ml-2"></i>
           </router-link>
         </div>
       </div>
@@ -264,10 +266,10 @@
       
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center mb-8">
         <div class="lg:col-span-2 order-2 lg:order-1">
-          <div class="relative mx-auto max-w-md" data-aos="fade-right" data-aos-delay="300">
+          <div class="relative mx-auto max-w-[200px] sm:max-w-md" data-aos="fade-right" data-aos-delay="300">
             <img src="../assets/studying-student.svg" alt="Étudiant concentré" class="w-full studying-student-animated">
-            <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center animate-pulse shadow-lg">
-              <i class="fas fa-lightbulb text-white text-lg"></i>
+            <div class="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 w-10 sm:w-12 h-10 sm:h-12 bg-accent-teal rounded-full flex items-center justify-center animate-pulse shadow-lg">
+              <i class="fas fa-lightbulb text-white text-base sm:text-lg"></i>
             </div>
           </div>
         </div>
@@ -532,9 +534,9 @@
           
           <div class="lg:col-span-2 hidden lg:block" data-aos="fade-left" data-aos-delay="600">
             <div class="relative">
-              <img src="../assets/student-group.svg" alt="Groupe d'étudiants" class="w-full student-group-animated">
-              <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent-orange rounded-full flex items-center justify-center animate-bounce-slow shadow-lg z-10">
-                <i class="fas fa-graduation-cap text-white text-lg"></i>
+              <img src="../assets/student-group.svg" alt="Groupe d'étudiants" class="w-full max-w-[280px] sm:max-w-full student-group-animated">
+              <div class="absolute -top-3 sm:-top-4 -left-3 sm:-left-4 w-10 sm:w-12 h-10 sm:h-12 bg-accent-orange rounded-full flex items-center justify-center animate-bounce-slow shadow-lg z-10">
+                <i class="fas fa-graduation-cap text-white text-base sm:text-lg"></i>
               </div>
             </div>
           </div>

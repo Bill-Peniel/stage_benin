@@ -13,12 +13,15 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: ['f6881f8e-2669-497e-a3a4-eff59ebe5111-00-3kwqiedudy6gb.worf.replit.dev', 'localhost', '.replit.dev'],
-    cors: {
-      origin: '*'
-    },
+    strictPort: true,
+    https: false,
+    open: true,
+    proxy: {},
+    cors: true,
     hmr: {
-      clientPort: 443
+      host: '0.0.0.0',
+      port: 5000,
+      protocol: 'ws'
     }
   }
 })

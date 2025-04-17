@@ -5,11 +5,7 @@
         <!-- Logo and title -->
         <div class="flex items-center">
           <router-link to="/" class="flex items-center">
-            <img src="../assets/ministry-logo.svg" alt="Logo du Ministère" class="h-12 w-auto" />
-            <div class="ml-3 hidden md:block">
-              <h1 class="text-lg font-semibold text-gray-900">Ministère de l'Économie et des Finances</h1>
-              <p class="text-sm text-gray-600">République du Bénin</p>
-            </div>
+            <img src="../assets/finance-logo.png" alt="Logo du Ministère" class="h-12 w-auto" />
           </router-link>
         </div>
         
